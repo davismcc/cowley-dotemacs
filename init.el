@@ -13,6 +13,7 @@
 ;;;;;;;;
 ;; Use sexy solarized theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
+(add-to-list 'custom-theme-load-path "/home/davismcc/.emacs.d/themes/emacs-color-theme-solarized")
 (load-theme 'solarized-light t)
 
 ;; ===== Turn off tab character =====
@@ -71,6 +72,8 @@ the syntax class ')'."
 ;; Use yasnippets
 (add-to-list 'load-path 
 	     "~/.emacs.d/plugins/yasnippet")
+(add-to-list 'load-path 
+	     "/home/davismcc/.emacs.d/plugins/yasnippet")
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas-global-mode 1)
 (yas--initialize)
